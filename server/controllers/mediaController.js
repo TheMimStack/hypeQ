@@ -46,7 +46,7 @@ mediaController.addMedia = (req, res, next) => {
       // console.log(res.locals.film);
     })
     .catch(e => {
-      console.log('error at starWarsController.addCharacter', e);
+      console.log('error at mediaController.addMedia', e);
       return next({
         log: 'Express error handler caught in addMedia middleware error',
         message: { err: 'An error occurred in addMedia middleware error' }
@@ -65,7 +65,7 @@ mediaController.deleteMedia = (req, res, next)=>{
       return next();
     })
     .catch(e => {
-      console.log('error at starWarsController.addCharacter', e);
+      console.log('error at mediaController.deleteMedia', e);
       return next({
         log: 'Express error handler caught in deleteMedia middleware error',
         message: { err: 'An error occurred in deleteMedia middleware error' }
